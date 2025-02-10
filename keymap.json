@@ -13,21 +13,34 @@
     "bindings": {
       "; b": [
         "task::Spawn",
-        { "task_name": "cargo build", "reveal_target": "center", "command": "cargo build" }
+        {
+          "task_name": "cargo build",
+          "reveal_target": "center",
+          "command": "cargo build"
+        }
       ],
       "; r": [
         "task::Spawn",
-        { "task_name": "cargo run", "reveal_target": "center", "command": "cargo run" }
+        {
+          "task_name": "cargo run",
+          "reveal_target": "center",
+          "command": "cargo run"
+        }
       ],
       "; t": [
         "task::Spawn",
-        { "task_name": "cargo test", "reveal_target": "center", "command": "cargo test" }
+        {
+          "task_name": "cargo test",
+          "reveal_target": "center",
+          "command": "cargo test"
+        }
       ]
     }
   },
   {
-    "context": "(VimControl && !menu) || vim_mode == normal",
+    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
     "bindings": {
+      "p": ["vim::Paste", { "preserveClipboard": true }]
     }
   },
   {
