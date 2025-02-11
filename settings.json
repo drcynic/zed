@@ -38,6 +38,13 @@
     // fix transparent background in Dracula theme
     "background": "#9577e0ff"
   },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
   "languages": {
     "TypeScript": {
       "code_actions_on_format": {
