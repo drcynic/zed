@@ -8,6 +8,10 @@
     "command": "cargo build"
   },
   {
+    "label": "cargo run",
+    "command": "cargo run"
+  },
+  {
     "label": "cargo test",
     "command": "cargo test"
   }
