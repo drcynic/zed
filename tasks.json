@@ -14,5 +14,15 @@
   {
     "label": "cargo test",
     "command": "cargo test"
+  },
+  {
+    "label": "file finder",
+    "command": "zed \"$(tv files)\"",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true,
+    "shell": {
+      "program": "sh"
+    }
   }
 ]

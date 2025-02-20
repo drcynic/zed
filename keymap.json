@@ -13,40 +13,34 @@
     "bindings": {
       "; b": [
         "task::Spawn",
-        {
-          "task_name": "cargo build",
-          "reveal_target": "center",
-          "command": "cargo build"
-        }
+        { "task_name": "cargo build", "reveal_target": "center" }
       ],
       "; r": [
         "task::Spawn",
-        {
-          "task_name": "cargo run",
-          "reveal_target": "center",
-          "command": "cargo run"
-        }
+        { "task_name": "cargo run", "reveal_target": "center" }
       ],
       "; t": [
         "task::Spawn",
-        {
-          "task_name": "cargo test",
-          "reveal_target": "center",
-          "command": "cargo test"
-        }
+        { "task_name": "cargo test", "reveal_target": "center" }
+      ],
+      "; f": [
+        "task::Spawn",
+        { "task_name": "file finder", "reveal_target": "center" }
       ]
     }
   },
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
     "bindings": {
-      "p": ["vim::Paste", { "preserveClipboard": true }]
+      "p": ["vim::Paste", { "preserve_clipboard": true }]
     }
   },
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-w": "pane::CloseActiveItem"
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-j": ["workspace::SendKeystrokes", "down"],
+      "ctrl-k": ["workspace::SendKeystrokes", "up"]
     }
   }
 ]
