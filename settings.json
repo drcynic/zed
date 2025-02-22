@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "telemetry": {
+    "metrics": false
+  },
   "autosave": "on_focus_change",
   "vim_mode": true,
   "ui_font_size": 16,
@@ -31,7 +34,7 @@
   },
   "theme": {
     "mode": "system",
-    "light": "One Dark Pro",
+    "light": "One Light",
     "dark": "One Dark"
   },
   "experimental.theme_overrides": {
