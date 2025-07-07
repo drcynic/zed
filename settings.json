@@ -44,6 +44,13 @@
     "light": "One Light",
     "dark": "One Dark"
   },
+  "minimap": {
+    "show": "always",
+    "display_in": "active_editor"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
   "experimental.theme_overrides": {
     // fix transparent background in Dracula theme
     "background": "#9577e0ff"
